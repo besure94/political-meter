@@ -22,9 +22,16 @@ window.onload = function() {
 		const whites = document.querySelector("input#whites").value;
 
 		if (abortion && gay && police && capitalism && healthcare && climate && government && taxes && rights && whites){
-			if (abortion === yes && gay === yes && police === yes && capitalism === yes && healthcare === yes && climate === yes && government === yes && taxes === yes && rights === yes && whites === yes) {
+			if (abortion === yes && gay === yes && police === yes && capitalism === no && healthcare === yes && climate === yes && government === yes && taxes === yes && rights === yes && whites === yes);
 				document.getElementById("liberal").removeAttribute("class");
+			} else if (abortion === yes && gay === yes && police === no && capitalism === yes && healthcare === no && climate === yes && government === yes && taxes === yes && rights === no && whites === no) {
+				document.getElementById("liberal").removeAttribute("class");
+			}	else if (abortion === yes && gay === yes && police === undecided && capitalism === undecided && healthcare === undecided && climate === undecided && government === undecided && taxes === undecided && rights === undecided && whites === undecided || abortion === yes && gay === yes && police === undecided && capitalism === yes && healthcare === no && climate === no && government === yes && taxes === yes && rights === no && whites === no) {
+				document.getElementById("moderate").removeAttribute("class");
+			} else if (abortion === no && gay === no && police === no && capitalism === yes && healthcare === no && climate === no && government === no && taxes === no && rights === no && whites === no) {
+				document.getElementById("conservative").removeAttribute("class");
+			} else {
+				document.getElementById("undetermined").removeAttribute("class");
 			}
-		}
-	}
-}
+		};
+	};
