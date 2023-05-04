@@ -21,5 +21,10 @@ window.onload = function() {
 		const rights = document.querySelector("input#rights").value;
 		const whites = document.querySelector("input#whites").value;
 
+		if (abortion && gay && police && capitalism && healthcare && climate && government && taxes && rights && whites){
+			if (abortion === yes && gay === yes && police === yes && capitalism === yes && healthcare === yes && climate === yes && government === yes && taxes === yes && rights === yes && whites === yes) {
+				document.getElementById("liberal").removeAttribute("class");
+			}
+		}
 	}
 }
