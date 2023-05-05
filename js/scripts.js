@@ -9,7 +9,7 @@ window.addEventListener("load", function() {
 	const form = document.querySelector("form");
 	const resetBtn = document.getElementById("reset");
 	const liberal = document.getElementById("liberal");
-	const moderate = document.getElementById("moderate");
+	// const moderate = document.getElementById("moderate");
 	// let conservative = document.getElementById("conservative");
 	// let undetermined = document.getElementById("undetermined");
 
@@ -21,7 +21,7 @@ window.addEventListener("load", function() {
 		const police = document.getElementById("police").value.toLowerCase();
 
 		liberal.removeAttribute("class");
-		moderate.removeAttribute("class");
+		// moderate.removeAttribute("class");
 		// conservative.removeAttribute("class");
 		// undetermined.removeAttribute("class");
 		event.preventDefault();
@@ -30,11 +30,11 @@ window.addEventListener("load", function() {
 			if (abortion === yes && gay === yes && police === yes) {
 				document.getElementById("liberal").removeAttribute("class");
 			} else if (abortion === yes && gay === yes && police === no || abortion === no && gay === no && police === yes){
-				document.getElementById("moderate").removeAttribute("class");
+				// document.getElementById("moderate").removeAttribute("class");
 			} else if (abortion === no && gay === no && police === no){
-				document.getElementById("conservative").removeAttribute("class");
+				// document.getElementById("conservative").removeAttribute("class");
 			} else {
-				document.getElementById("undetermined").removeAttribute("class");
+				// document.getElementById("undetermined").removeAttribute("class");
 			}
 		}
 	});
@@ -61,7 +61,7 @@ window.addEventListener("load", function() {
 
 	resetBtn.addEventListener("click", function() {
 		liberal.setAttribute("class", "hidden");
-		moderate.setAttribute("class", "hidden");
+		// moderate.setAttribute("class", "hidden");
 		// conservative.setAttribute("class", "hidden");
 		// undetermined.setAttribute("class", "hidden");
 		document.getElementById("abortion").value = null;
