@@ -15,13 +15,6 @@ window.onload = function() {
 		const abortion = document.querySelector("input#abortion").value.toLowerCase();
 		const gay = document.querySelector("input#gay").value.toLowerCase();
 		const police = document.querySelector("input#police").value.toLowerCase();
-		// const capitalism = document.querySelector("input#capitalism").value.toLowerCase();
-		// const healthcare = document.querySelector("input#healthcare").value.toLowerCase();
-		// const climate = document.querySelector("input#climate").value.toLowerCase();
-		// const government = document.querySelector("input#government").value.toLowerCase();
-		// const taxes = document.querySelector("input#taxes").value.toLowerCase();
-		// const rights = document.querySelector("input#rights").value.toLowerCase();
-		// const whites = document.querySelector("input#whites").value.toLowerCase();
 
 			if (abortion && gay && police) {
 				if (abortion === yes && gay === yes && police === yes) {
@@ -34,15 +27,5 @@ window.onload = function() {
 					document.getElementById("undetermined").removeAttribute("class");
 				}
 			}
-		// if (abortion && gay && police && capitalism && healthcare && climate && government && taxes && rights && whites){
-		// 	if (abortion === yes && gay === yes && police === yes && capitalism === no && healthcare === yes && climate === yes && government === yes && taxes === yes && rights === yes && whites === yes)
-		// 		document.getElementById("liberal").removeAttribute("class");
-		// 	}	else if (abortion === yes && gay === yes && police === yes && capitalism === yes && healthcare === yes && climate === no && government === no && taxes === no && rights === no && whites === no || abortion === no && gay === no && police === no && capitalism === no && healthcare === no && climate === yes && government === yes && taxes === yes && rights === yes && whites === yes) {
-		// 		document.getElementById("moderate").removeAttribute("class");
-		// 	} else if (abortion === no && gay === no && police === no && capitalism === yes && healthcare === no && climate === no && government === no && taxes === no && rights === no && whites === no) {
-		// 		document.getElementById("conservative").removeAttribute("class");
-		// 	} else {
-		// 		document.getElementById("undetermined").removeAttribute("class");
-		// 	}
 		};
 	};
