@@ -13,7 +13,7 @@ window.addEventListener("load", function() {
 	// let conservative = document.getElementById("conservative");
 	// let undetermined = document.getElementById("undetermined");
 
-	form.addEventListener("submit",function(event) {
+	form.addEventListener("submit", function(event) {
 		const yes = "yes";
 		const no = "no";
 		const abortion = document.getElementById("abortion").value.toLowerCase();
@@ -64,8 +64,8 @@ window.addEventListener("load", function() {
 		moderate.setAttribute("class", "hidden");
 		// conservative.setAttribute("class", "hidden");
 		// undetermined.setAttribute("class", "hidden");
-		document.getElementById("abortion").value.toLowerCase() = null;
-		document.getElementById("gay").value.toLowerCase() = null;
-		document.getElementById("police").value.toLowerCase() = null;
+		document.getElementById("abortion").value = null;
+		document.getElementById("gay").value = null;
+		document.getElementById("police").value = null;
 	});
 });
