@@ -1,14 +1,10 @@
-// function hideResults() {
-// 	document.getElementById("liberal").setAttribute("class", "hidden");
-// 	document.getElementById("moderate").setAttribute("class", "hidden");
-// 	document.getElementById("conservative").setAttribute("class", "hidden");
-// 	document.getElementById("undetermined").setAttribute("class", "hidden");
-// }
-
 window.addEventListener("load", function() {
 	let form = document.querySelector("form");
 	let resetBtn = document.getElementById("reset");
 	let liberal = document.getElementById("liberal");
+	let moderate = document.getElementById("moderate");
+	let conservative = document.getElementById("conservative");
+	let undetermined = document.getElementById("undetermined");
 
 	form.addEventListener("submit", function(event) {
 		const yes = "yes";
@@ -17,7 +13,10 @@ window.addEventListener("load", function() {
 		const gay = document.getElementById("gay").value.toLowerCase();
 		const police = document.getElementById("police").value.toLowerCase();
 
-		liberal.removeAttribute("class");
+		liberal.setAttribute("class", "hidden");
+		moderate.setAttribute("class", "hidden");
+		conservative.setAttribute("class", "hidden");
+		undetermined.setAttribute("class", "hidden");
 		event.preventDefault();
 
 		if (abortion && gay && police) {
